@@ -1,0 +1,46 @@
+//--- Base ---//
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    @include sansSerif;
+    color: $c_base;
+    background: $c_bg;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+body {
+    font-size: 90%;
+    @media (min-width: $m_smaller) {
+        font-size: 100%;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1em;
+}
+li, p, blockquote {
+    line-height: 1.5em;
+}
+a {
+    color: $c_primary;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.wrapper {
+    width: 90%;
+    max-width: $m_medium;
+    margin-left: auto;
+    margin-right: auto;
+}
+.browsehappy {
+    margin: 0;
+    background: $c_primary;
+    color: $c_opposite;
+    padding: 1em 0;
+    text-align: center;
+}

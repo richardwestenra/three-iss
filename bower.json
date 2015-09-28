@@ -1,0 +1,19 @@
+{
+  "name": "three-iss",
+  "private": true,
+  "dependencies": {
+    "respond": "~1.4.2",
+    "social-likes": "~3.0.4",
+    "jquery": "~1.11.3",
+    "modernizr": "~2.8.3"
+  },
+  "overrides": {
+    "social-likes": {
+      "main": "./src/social-likes.js"
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.3.0",
+    "mocha": "~2.3.3"
+  }
+}
